@@ -19,16 +19,25 @@ video {
 }
 
 .download-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
+    display: block; /* Размещаем кнопки в столбик */
+    width: 90%; /* Делаем кнопки шире */
+    max-width: 400px; /* Ограничиваем максимальную ширину */
+    margin: 15px auto; /* Центрируем и добавляем отступ */
+    padding: 12px 20px;
     background: #ff6600;
     color: white;
     text-decoration: none;
     font-size: 18px;
-    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .download-btn:hover {
     background: #cc5500;
+    transform: scale(1.05); /* Небольшой эффект при наведении */
+}
+
+h1, h2 {
+    margin-bottom: 20px;
 }
